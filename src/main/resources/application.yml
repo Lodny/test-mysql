@@ -1,0 +1,23 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: mysql
+
+  datasource:
+    username: root
+    password: mysql
+    url: jdbc:mysql://192.168.0.2:3306/spc
+#    jdbc-url: jdbc:mysql://192.168.0.2:3306/spc?&serverTimezone=UTC&autoReconnect=true&allowMultiQueries=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#  jpa:
+#    generate-ddl:
+
+
+mybatis:
+  mapper-locations: classpath:/mapper/**/*.xml
+#  configuration:
+#    map-underscore-to-camel-case: true
+#  config-location: classpath:/mybatis/mybatis-config.xml
